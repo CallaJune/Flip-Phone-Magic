@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Flip Phone Magic</title>
+	<script language="Javascript" type="text/javascript" src="numbermap.js">
+	</script>
+	
+	
+	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
+	<style type="text/css">
+		body{font-family: arial, serif;}
+		#wrapper{border-left:1px solid #cccccc;border-right:1px solid #cccccc;margin:0 auto;padding: 0 20px;width: 700px}
+		#generator{background:#e9f3f6;border:1px solid #cccccc;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
+		#footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
+		#footer a{color:#999}
+	</style>
+	
+	
+</head>
+<body onload="generator()">
+	<div id="wrapper">
+		
+		<h1>Flip Phone Magic</h1>
+		<p>For those of you still texting on number pads, this may save you some time. It's a simple javascript program that shows you which numbers to type while texting your message. Enter the word/sentence you want to text, and Flip Phone Magic will give you the numbers on your keypad to press!
+		</p>
+		
+		<form name=myform>
+<table border=0>
+<tr>
+<td>Message:</td>
+<td><input type=text size=50 maxlength=50 name=alphabet value=""></td>
+</tr>
+<tr>
+<td>Numbers to text:</td>
+<td><input type="text" size=50 maxlength=50 name="number"></td>
+</tr>
+<tr>
+<td align=center colspan=2><input type=button value="Convert" onClick="return convert(document.myform.alphabet.value)"></td>
+</table>
+</form>
+                
+		<div id="footer">
+		<p>
+			Created by <a href=https://github.com/CallaJun">Calla Carter</a>
+		</p>
+		</div>
+	</div>
+</body>
+</html>
